@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다음카카오 우편번호 검색기능 구현</title>
+
+
+  <style>
+    
+    form[name='form1'] > input[type ="text"] , input[type ="button"]{
+      border: 1px solid gainsboro;
+      vertical-align: top;
+      height: 3rem;
+      box-sizing: border-box;
+    }
+
+    input[type ="button"]{
+      cursor: pointer;
+    }
+    
+    form[name='form1'] > input[name ="addr1"], form[name='form1'] > input[name ="addr2"]{
+      width: 270px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <form action="" name="form1">
+    <input type="text" name="zipcode" maxlength="5" readonly>
+    <input type="button" value="우편번호검색" id="btn"> <br>
+    <input type="text" name="addr1" autocomplete="off">
+    <input type="text" name="addr2" autocomplete="off">
+  </form>
+
+  <script src="zipcode.js"></script>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+</body>
+</html>   
